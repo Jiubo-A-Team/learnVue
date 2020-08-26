@@ -1,0 +1,12 @@
+@charset "utf-8";
+body, div, dl, dt, dd, ul, ol, li, pre, form, fieldset, input, textarea, p, blockquote, th, tr, td, font, form, p, h1, h2, h3, h4, h5, h6, span, a, i ,button{ padding: 0px; margin: 0px; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+em, i { font-style: normal; }
+html, body { -moz-text-size-adjust: none; font-family: "microsoft yahei"; font-size: 14px; color: #333; }
+img { border: 0px none; }
+ul, li { list-style-type: none; }
+a { text-decoration: none; color: #333; outline: medium none; }
+a:hover { text-decoration: none; }
+.clearfix:after {content: ".";width: 0;height: 0;visibility: hidden;display: block;clear: both;overflow:hidden;}
+
+.kj-name{font-size: 30px;padding: 20px;}
