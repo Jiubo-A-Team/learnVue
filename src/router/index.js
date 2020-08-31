@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import MainPage from '@/components/MainPage'
 import ws from '@/components/ws/ws'
-import wsTest from '@/components/ws/wsTest'
+import QRcode from '@/components/ws/QRcode'
 import yy from '@/components/yy/yy'
 import lm from '@/components/lm/lm'
 import far from '@/components/far/far'
@@ -23,9 +23,9 @@ export default new Router({
           component: ws
         },
         {
-          path: '/ws/wsTest',
-          name: 'wsTest',
-          component: wsTest
+          path: '/ws/QRcode',
+          name: 'QRcode',
+          component: QRcode
         },
         {
           path: '/yy/yy',

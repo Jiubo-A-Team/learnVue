@@ -15,6 +15,9 @@
   },
   "dependencies": {
     "element-ui": "^2.13.2",
+    "html2canvas": "^1.0.0-rc.7",
+    "qrcanvas": "^3.1.1",
+    "qrcodejs2": "0.0.2",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
