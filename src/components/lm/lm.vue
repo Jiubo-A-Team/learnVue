@@ -42,6 +42,7 @@
 	  		<th>性别</th>
 	  		<th>地址</th>
 	  	</tr>
+		
 	  	<tr :key="index" v-for="(item,index) in tableData">
 			<td>{{item.date | formatDate}}</td>
 	  		<td>{{item.name}}</td>
