@@ -40,10 +40,11 @@
 	  		<th>日期</th>
 	  		<th>姓名</th>
 	  		<th>性别</th>
-	  		<地址>日期</th>
+	  		<th>地址</th>
 	  	</tr>
+		
 	  	<tr :key="index" v-for="(item,index) in tableData">
-	  		<td>{{(/\d{4}-\d{1,2}-\d{1,2}/g).exec(item.date)}}</td>
+			<td>{{item.date | formatDate}}</td>
 	  		<td>{{item.name}}</td>
 	  		<td v-if="item.sex==1 ? isex='男':isex='女'">{{isex}}</td>
 	  		<td>{{item.address}}</td>
@@ -92,7 +93,13 @@
     		return row.sex==1 ? "男":"女";
     	}
     	
-    }
+    },
+	filters: {
+		formatDate(v) {
+			//return /\d{4}-\d{1,2}-\d{1,2}/g.exec(v);
+			return v.replace(' 00:00:00', '');
+		}
+	}
   }
 	
 </script>
