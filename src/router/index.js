@@ -5,6 +5,7 @@ import ws from '@/components/ws/ws'
 import QRcode from '@/components/ws/QRcode'
 import yy from '@/components/yy/yy'
 import lm from '@/components/lm/lm'
+import table from '@/components/lm/table'
 import far from '@/components/far/far'
 
 
@@ -36,6 +37,11 @@ export default new Router({
           path: '/lm/lm',
           name: 'lm',
           component: lm
+        },
+        {
+          path: '/lm/table',
+          name: 'table',
+          component: table
         },
         {
           path: '/far/far',
