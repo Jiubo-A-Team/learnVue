@@ -6,7 +6,7 @@ import wsTest from '@/components/ws/wsTest'
 import yy from '@/components/yy/yy'
 import lm from '@/components/lm/lm'
 import far from '@/components/far/far'
-
+import far0827table from '@/components/far/20200827table'
 
 Vue.use(Router)
 
@@ -26,6 +26,11 @@ export default new Router({
           path: '/ws/wsTest',
           name: 'wsTest',
           component: wsTest
+        },
+        {
+          path: '/far/20200827table',
+          name: 'far0827table',
+          component: far0827table
         },
         {
           path: '/yy/yy',
