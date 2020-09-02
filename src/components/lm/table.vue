@@ -51,7 +51,7 @@
 	  	<tr :key="index" v-for="(item,index) in tableData">
 			<td>{{item.date | formatDate}}</td>
 	  		<td>{{item.name}}</td>
-	  		<td v-if="item.sex==1 ? isex='男':isex='女'">{{isex}}</td>
+	  		<td>{{item.sex==1 ? '男' : '女'}}</td>
 	  		<td>{{item.address}}</td>
 	    </tr>
 	  </table>
