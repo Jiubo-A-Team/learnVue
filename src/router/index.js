@@ -2,9 +2,10 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import MainPage from '@/components/MainPage'
 import ws from '@/components/ws/ws'
-import wsTest from '@/components/ws/wsTest'
+import QRcode from '@/components/ws/QRcode'
 import yy from '@/components/yy/yy'
 import lm from '@/components/lm/lm'
+import table from '@/components/lm/table'
 import far from '@/components/far/far'
 import far0827table from '@/components/far/20200827table'
 
@@ -23,9 +24,9 @@ export default new Router({
           component: ws
         },
         {
-          path: '/ws/wsTest',
-          name: 'wsTest',
-          component: wsTest
+          path: '/ws/QRcode',
+          name: 'QRcode',
+          component: QRcode
         },
         {
           path: '/far/20200827table',
@@ -41,6 +42,11 @@ export default new Router({
           path: '/lm/lm',
           name: 'lm',
           component: lm
+        },
+        {
+          path: '/lm/table',
+          name: 'table',
+          component: table
         },
         {
           path: '/far/far',
