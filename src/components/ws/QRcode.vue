@@ -23,7 +23,7 @@ import html2canvas from 'html2canvas'
 export default {
   data () {
     return {
-      imgUrl: ''
+      imgUrl: '',
     }
   },
 
@@ -34,7 +34,7 @@ export default {
   watch: {
     imgUrl (val, oldval) {
       // 监听到imgUrl有变化以后 说明新图片已经生成 隐藏DOM
-      this.$refs.box.style.display = 'none'
+      //this.$refs.box.style.display = 'none'
     }
   },
   created () {
@@ -53,6 +53,8 @@ export default {
     //   })
     // },
     createQrcode () {
+      this.$refs.box.style.display = 'block'
+
       let that = this
       that.$nextTick(function () {
         // 生成二维码
