@@ -38,8 +38,8 @@
                  <td>
                      {{item.name}}
                  </td>
-                 <td>
-                     {{item.sex}}
+                 <td v-if="item.sex==1 ? sexdata='男':sexdata='女'">
+                     {{sexdata}}
                  </td>
                  <td>
                      {{item.address}}
