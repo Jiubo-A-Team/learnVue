@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="lmright">
     <h1 class="kj-name">李密 的空间</h1>
     <el-table
 	    :data="tableData"
@@ -9,25 +9,30 @@
 	      fixed
 	      prop="date"
 	      label="日期"
+		  align="center"
 	      :formatter="resetDate">
 	    </el-table-column>
 	    <el-table-column
 	      prop="name"
-	      label="姓名">
+	      label="姓名"
+		  align="center">
 	    </el-table-column>
 	    <el-table-column
 	      fixed
 	      prop="sex"
 	      label="性别"
+		  align="center"
 	      :formatter="resetSex">
 	    </el-table-column>
 	    <el-table-column
 	      prop="address"
-	      label="地址">
+	      label="地址"
+		  align="center">
 	    </el-table-column>
 	    <el-table-column
 	      fixed="right"
 	      label="操作"
+		  align="center"
 	      width="100">
 	      <template slot-scope="scope">
 	        <el-button @click="handleClick(scope.row)" type="text" size="small">查看</el-button>
@@ -35,7 +40,7 @@
 	      </template>
 	    </el-table-column>
 	  </el-table>
-	  <table border="" cellspacing="" cellpadding="">
+	  <table border="" cellspacing="" cellpadding="" class="ystable">
 	  	<tr>
 	  		<th>日期</th>
 	  		<th>姓名</th>
@@ -98,6 +103,7 @@
 		formatDate(v) {
 			//return /\d{4}-\d{1,2}-\d{1,2}/g.exec(v);
 			return v.replace(' 00:00:00', '');
+			//return v.Format("yyyy-MM-dd");
 		}
 	}
   }
@@ -105,4 +111,7 @@
 </script>
 
 <style>
+.lmright{ padding:0 20px;}
+.ystable{background-color: transparent; border-collapse: collapse; border-spacing: 0; width:100%; margin-top:50px; border:1px solid #000;}
+.ystable tr,.ystable td { text-align:center; line-height:40px;}
 </style>
