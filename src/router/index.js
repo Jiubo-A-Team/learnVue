@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import MainPage from '@/components/MainPage'
 import ws from '@/components/ws/ws'
 import QRcode from '@/components/ws/QRcode'
+import video from '@/components/ws/video'
 import yy from '@/components/yy/yy'
 import lm from '@/components/lm/lm'
 import table from '@/components/lm/table'
@@ -27,6 +28,12 @@ export default new Router({
           path: '/ws/QRcode',
           name: 'QRcode',
           component: QRcode
+        },
+
+        {
+          path: '/ws/video',
+          name: 'video',
+          component: video
         },
         {
           path: '/far/20200827table',

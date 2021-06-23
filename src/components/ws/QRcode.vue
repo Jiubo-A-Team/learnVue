@@ -17,7 +17,7 @@
 </template>
 
 <script>
-// import QRCode from 'qrcodejs2'
+import QRCode from 'qrcodejs2'
 import { qrcanvas } from 'qrcanvas'
 import html2canvas from 'html2canvas'
 export default {
